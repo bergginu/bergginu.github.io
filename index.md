@@ -1,4 +1,5 @@
-## Portfólio e notas de projetos (#Maker, #Python e #KDD)
+## Berg Ginú
+
 ### Sobre estas notas
 
 Aqui estão algumas notas sobre meus interesses e atividades, tal qual um portfólio bem modesto. Em geral, tem algo das atividades da academia e trabalho (téc-admin UEPB), também de Python, Aquisição e Análise de Dados (KDD/Dada Analysis/Data Mining/DSP/Séries Temporais), Linux e Maker. Talvez mais coisas, talvez menos coisas, que devo postar na medida em que organizar.
