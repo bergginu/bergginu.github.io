@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## Ginutec - Notas sobre Maker e KDD
 
-You can use the [editor on GitHub](https://github.com/bergginu/bergginu.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+## Sobre
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Aqui tem algumas notas sobre meus interesses, tal qual um portifólio bem modesto. Em geral, tem algo de Python, Análise de Dados (KDD/Dada Analysis/Data Mining), Linux, Aquisição de Dados, Maker e Processamento de Sinais. Talvez mais coisas, talvez menos coisas. Espero que sejam úteis pra você.
 
 ### Markdown
 
