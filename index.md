@@ -15,7 +15,7 @@ Crio scripts e pequenos projetos em Python a quase o mesmo tempo (desde a versã
 
 ### Academia, aquisição de dados e embarcados
 Possuo experiência acadêmica com desenvolvimento de hardware embarcado (ARM/Cortex M3) para aquisição de dados, com ênfase em biossinais (Vide [Trabalhos premiados no XXVII Encontro 
-de Iniciação Científica da UFPB, p.245][iniciados] e [Apresentação sobre Banana PI (Raspberry Pi like)][apres_bpi]). Sou colaborador técnico em projetos de extensão no Centro de Humanidades da UEPB (Vide [Programas e Projetos por área - Cota 2018-2019][uepb_projeto_ex1]).
+de Iniciação Científica da UFPB, p.245][iniciados] e [Apresentação sobre Banana PI (Raspberry Pi like)][apres_bpi]). Sou colaborador técnico em projetos de extensão no Centro de Humanidades da UEPB (Vide [Programas e Projetos por área - Cota 2017-2018][uepb_projeto_ex1]).
 
 ### Modelagem e impressão 3D
 Em 2020 coloquei em funcionamento minha [primeira impressora 3D ][igi3], dotada de hardware e firmware (baseado no [marlin][marlin]) completamente customizados por mim. Também desenho alguns componentes usando FreeCAD. No meu [perfil no Thigiverse][thigiverse] você pode encontrar um ou outro trabalho de modelagem de minha autoria.
