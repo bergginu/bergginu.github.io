@@ -1,6 +1,8 @@
 ---
+layout: post
 title: "Matplotlib: usando grades"
-date: 2022-01-11
+date: 2022-01-11 10:30
+categories: python matplotlib datascience
 ---
 
 Nesta postagem mostro algumas rotinas de configuração de grades usando [Matplotlib][matplotlib].
