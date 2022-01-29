@@ -1,6 +1,8 @@
 ---
+layout: post
 title: "Dicas de Git e Github"
-date: 2022-01-29
+date: 2022-01-29 10:39
+categories: git github
 ---
 
 Fluencia em uso do git é um dos requisitos mais comuns em recrutamento de desenvolvedores (e em TI). Esta postagem aglomera algumas dicas que podem te ajudar atingir esta fluência.
