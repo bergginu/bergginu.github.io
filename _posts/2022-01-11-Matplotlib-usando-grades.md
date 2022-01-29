@@ -35,6 +35,7 @@ plt.grid(which='minor', color='beige', alpha=0.8, linestyle='-', lw=1)
 plt.show()
 ```
 E temos como resultado final:
+![matplolig_post_1](https://user-images.githubusercontent.com/368771/151663464-869b5d58-bcf5-49d5-9e85-ad4badf561ee.png)
 
 
 [matplotlib]: https://matplotlib.org/
