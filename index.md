@@ -1,26 +1,12 @@
 ## Berg Ginú
 
-### Sobre estas notas
+### Sobre
 
-Aqui estão algumas notas sobre meus interesses e atividades, tal qual um portfólio bem modesto. Em geral, tem algo das atividades da academia e trabalho (téc-admin UEPB), também de Python, Aquisição e Análise de Dados (KDD/Dada Analysis/Data Mining/DSP/Séries Temporais), Linux e Maker. Talvez mais coisas, talvez menos coisas, que devo postar na medida em que organizar.
-
-### Sobre mim
-
-Sou Waldemberg D. Ginú (A.K.A. Berg Ginu), estudante do último ano de graduação em Física pela [UFPB][ufpb] e servidor da [UEPB][uepb] desde 2012.
-
-### Linux
-Tenho experiência com sistemas Linux em nível de SysAdm Jr, que contabilizam uns 16 anos de Apt/Make/Bash/man/GuiaFoca/LFS.
-
-### Python
-Crio scripts e pequenos projetos em Python a quase o mesmo tempo (desde a versão 2.1? embarcada no Kurumin 7). Dentre as bibliotecas  de uso recorrente, posso citar: Django, Flask, Numpy, Scipy, Pandas e Matplotlib. No momento estou a desenvolver um minicurso sobre Jupyter voltado apra tratamento de dados científicos.
+Sou Waldemberg D. Ginú (A.K.A. Berg Ginu), graduado em Física pela [UFPB][ufpb]. Sou servidor da [UEPB][uepb] desde 2012, vindo a me meter, por força do ofício, nas áreas de Biblioteconomia de Ciência da Informação e, por proximidade, Analise e Ciência de Dados.
 
 ### Academia, aquisição de dados e embarcados
 Possuo experiência acadêmica com desenvolvimento de hardware embarcado (ARM/Cortex M3) para aquisição de dados, com ênfase em biossinais (Vide [Trabalhos premiados no XXVII Encontro 
 de Iniciação Científica da UFPB, p.245][iniciados] e [Apresentação sobre Banana PI (Raspberry Pi like)][apres_bpi]). Sou colaborador técnico em projetos de extensão no Centro de Humanidades da UEPB (Vide [Programas e Projetos por área - Cota 2017-2018][uepb_projeto_ex1]).
-
-### Modelagem e impressão 3D
-Em 2020 coloquei em funcionamento minha [primeira impressora 3D ][igi3], dotada de hardware e firmware (baseado no [marlin][marlin]) completamente customizados por mim. Também desenho alguns componentes usando FreeCAD. No meu [perfil no Thigiverse][thigiverse] você pode encontrar um ou outro trabalho de modelagem de minha autoria.
-
 
 [iniciados]: http://www.propesq.ufpb.br/propesq/contents/downloads/serie-iniciados/iniciadosvol25.pdf#page=245
 [ufpb]: https://www.ufpb.br/
