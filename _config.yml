@@ -3,7 +3,7 @@ author: Berg Ginú
 email: ginu.berg@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Portifólio e notas de projetos (#Maker, #Python e #KDD)
-theme: jekyll-theme-tactile
+theme: whiteglass
 
 # social links
 twitter_username: bergginu # DO NOT include the @ character, or else the build will fail!
