@@ -1,0 +1,4 @@
+Sitemap: https://bergginu.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: bergginu.github.io
