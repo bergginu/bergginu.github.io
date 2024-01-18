@@ -1,0 +1,6 @@
+cache
+.doit.db
+bergginu.github.io
+*__pycache__
+*.ipynb_checkpoints
+*.pyc
