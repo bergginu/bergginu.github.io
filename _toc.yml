@@ -1,0 +1,9 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: 000_intro
+chapters:
+- file: 001_numpy
+- file: 002_numpy
+- file: 003_numpy
