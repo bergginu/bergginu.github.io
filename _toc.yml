@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: 000_intro
+root: index
 chapters:
 - file: 001_numpy
 - file: 002_matplotlib
