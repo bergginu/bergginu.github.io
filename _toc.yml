@@ -5,5 +5,5 @@ format: jb-book
 root: 000_intro
 chapters:
 - file: 001_numpy
-- file: 002_numpy
-- file: 003_numpy
+- file: 002_matplotlib
+- file: 003_pandas

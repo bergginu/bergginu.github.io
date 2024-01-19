@@ -72,6 +72,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = '001_numpy';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Exemplos com Matplotlib" href="002_matplotlib.html" />
     <link rel="prev" title="Notas &amp; Notes" href="000_intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="pt-br"/>
@@ -178,6 +179,8 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Numpy: um introdução</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002_matplotlib.html">Exemplos com Matplotlib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="003_pandas.html">Exemplos com Pandas</a></li>
 </ul>
 
     </div>
@@ -378,51 +381,79 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="numpy-um-introducao">
 <h1>Numpy: um introdução<a class="headerlink" href="#numpy-um-introducao" title="Permalink to this heading">#</a></h1>
 <p><a class="reference external" href="https://numpy.org/">Numpy</a> é, senão a mais, uma das mais populares bibliotecas para computação numérica na comunidade do Python. De tal forma que muitas outras bibliotecas desse segmento, quando não impletam suas funcionalidades usando o próprio Numpy como base, garantem com aquela um certo grau de compatibilidade ou suporte.<br />
-Dentre as suas muitas funcionalidades, ela implementa extruturas de dados que facilitam enormemente o trabalho com números, acelerando a implementação das rotinas e otimizando o uso de recursos como memória e processamento, se compararmos com a implemtação das mesmas rotinas usando as estruturas nativas do Python, o que era de se esperar, dada a sua proposta.<br />
+A biblioteca implementa uma extrutura de dados (a <a class="reference external" href="https://numpy.org/doc/stable/reference/arrays.ndarray.html#the-n-dimensional-array-ndarray">ndarray</a>) homogênea (os dados são do mesmo tipo), cujos elementos podem ser acessados por índices inteiros. Comparadas as estruturas como listas e tuplas padrões do Python, a ndarray oferce vantagens para computação numérica, otimizando recursos como memória e poder de processamento. Ela também apresenta um recuso chamado “<a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-vectorization">vetorização</a>” (<em>vecotirzation</em>), que permite realizar operações com cada elemento do arranjo, de forma simples, reduzindo a necessidade do uso de <em>loops</em> (<em>for</em>, <em>while</em>).
 Para entender melhor, vamos a algumas práticas com a biblioteca, començando pela tradicional importação dos módulos e escrita de algumas rotinas básicas.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># Importação do Numpy. &quot;as np&quot; cria um &quot;alias&quot; (apelido) para &quot;numpy&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">.5</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;numpy&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(array([1, 2, 3]),
+ array([0. , 0.5, 1. , 1.5]),
+ array([ 0.,  2.,  4.,  6.,  8., 10.]))
+</pre></div>
+</div>
+</div>
+</div>
+<p>Os métodos <strong>array</strong>, <strong>arange</strong> e <strong>linspace</strong> retornam arranjos (arrays) numéricos, seguido diferentes processos de criação.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array"><em>array</em></a> retorna um obeto array numpy, contando os valores passados na lista.</p></li>
+<li><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.arange.html#numpy.arange"><em>arange</em></a> retornar um arranjo contendo valores no intervalo definido pelo primeito e último parâmetro, com espaçamento dado pelo terceiro parâmetro.</p></li>
+<li><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.linspace.html#numpy.linspace"><em>linspace</em></a> funciona quase como <em>arange</em>, mas o terceiro parâmetro expressa a quantidade de elementos do intervalo, em vez do espaçamento.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">.2</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mf">.2</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">==</span> <span class="n">y</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([ True])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 1.        ,  0.2       ,  5.        ],
+       [ 0.        , -3.        , -1.        ],
+       [ 0.2       ,  3.14159265,  0.        ]])
 </pre></div>
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6.101592653589793
+</pre></div>
+</div>
+</div>
+</div>
+<p>Acima, em sequência, declaramos uma matriz quadrada (mat), imprimimos em tela e calculamos seu determinante, usado a função <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.det.html#numpy.linalg.det">det</a> do pacote <a class="reference external" href="https://numpy.org/doc/stable/reference/routines.linalg.html#module-numpy.linalg">linalg</a>.</p>
+<p><strong>Continua… WDG - 2024/01/19</strong></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -463,6 +494,15 @@ Para entender melhor, vamos a algumas práticas com a biblioteca, començando pe
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Notas &amp; Notes</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="002_matplotlib.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Exemplos com Matplotlib</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
