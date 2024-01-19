@@ -1272,6 +1272,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # in the default template (base.tmpl).
 # (translatable)
 BODY_END = """
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RBW1PRR4H"></script>
 <script>
@@ -1281,6 +1282,7 @@ BODY_END = """
 
   gtag('config', 'G-0RBW1PRR4H');
 </script>
+
 """
 
 # The possibility to extract metadata from the filename by using a
