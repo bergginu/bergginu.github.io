@@ -34,5 +34,7 @@ html:
 
 sphinx:
   config:
-    html_extra_path: ['assets']
     language: pt-br
+
+execute:
+  execute_notebooks: 'off'
