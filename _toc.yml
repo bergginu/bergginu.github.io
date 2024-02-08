@@ -7,3 +7,4 @@ chapters:
 - file: 001_numpy
 - file: 002_matplotlib
 - file: 003_pandas
+- file: 004_ajuste_de_curvas
